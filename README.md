@@ -19,21 +19,20 @@ To get started:
 1. Navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository.  
 2. Download the APK file of your desired release.  
 3. Install the APK on your Android device.  
-4. Grant the requested permissions upon first launch to enable full functionality.  
+4. Grant the requested permissions upon the first launch to enable full functionality.  
 
 <br>
 
 ## Configuration ⚙️
 
 After installation, configure the app with the following steps:  
-1. Click the `Edit` button next to the parameters in the configuration screen.  
-2. Provide the required values for:  
+1. Set the values of the following parameters by clicking the `Edit` button beside the value. 
    - **Server IP Address**  
    - **Server Port**  
    - **Username**  
    - **Password**  
 
-3. Test your configuration by clicking the `Ping` button. The app will validate the connection and login credentials.  
+2. Test your configuration by clicking the `Ping` button. The app will validate the connection and login credentials.  
 
 
 ### User Preferences (Optional)
