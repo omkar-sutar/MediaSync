@@ -1,7 +1,4 @@
 package com.dubu.MediaSync;
-
-import static androidx.activity.result.ActivityResultCallerKt.registerForActivityResult;
-
 import android.content.BroadcastReceiver;
 import android.content.ClipData;
 import android.content.ClipDescription;
@@ -51,7 +48,6 @@ import java.util.concurrent.Executors;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final int RESULT_STORAGE_PERMISSION = 1;
     private ActivityResultLauncher<Intent> manageStorageLauncher;
     private ActivityResultLauncher<String> notificationPermissionLauncher;
     private ServiceConnection serviceConnection;
@@ -181,7 +177,7 @@ public class MainActivity extends AppCompatActivity {
         preferenceData.ReadPreferenceData(this);
         SwitchMaterial switchMaterial = findViewById(R.id.backupStateBtn);
         switchMaterial.setChecked(preferenceData.getBackupState());
-        TextView ipAddr, port, username, password, dateThreshold;
+        TextView ipAddr, port, username, password, dateThreshold,lastBackup;
         ipAddr = findViewById(R.id.ipaddrTextView);
         port = findViewById(R.id.portTextView);
         username = findViewById(R.id.usernameTextView);
@@ -193,6 +189,8 @@ public class MainActivity extends AppCompatActivity {
         password.setText(preferenceData.getPassword());
         String date = preferenceData.getDateThreshold().format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
         dateThreshold.setText(date);
+        lastBackup = findViewById(R.id.lastBackupTextView);
+        lastBackup.setText(preferenceData.getLastBackup());
     }
 
 //    private void AlertAndAccessStoragePermissions(Context context,ActivityResultLauncher<Intent> manageStorageLauncher) {
@@ -434,6 +432,11 @@ public class MainActivity extends AppCompatActivity {
             // Backup was successful
             // TODO Update last backup info
             showToast("Backup completed successfully");
+            TextView lastBackup = findViewById(R.id.lastBackupTextView);
+            PreferenceData preferenceData = PreferenceData.getPreferenceData();
+            preferenceData.setLastBackup("",true);
+            preferenceData.WritePreferenceData(this);
+            lastBackup.setText(preferenceData.getLastBackup());
         } else {
             // Backup failed or encountered an error
             // ... handle the error

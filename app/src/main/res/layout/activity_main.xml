@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#121212"
     android:padding="16dp"
-    tools:context=".MainActivity">
+    tools:context="com.dubu.MediaSync.MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
@@ -45,13 +45,15 @@
             android:layout_height="wrap_content" />
 
     </LinearLayout>
+
     <TextView
+        android:id="@+id/lastBackupTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
         android:text="Last Backup: 6/12/22 2:00 am"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
-        android:paddingBottom="16dp"
         tools:ignore="HardcodedText" />
 
 
