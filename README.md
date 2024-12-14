@@ -1,37 +1,54 @@
 # MediaSync
 
-### MediaSync is an android client to backup your media to MediaHaven.
-
+### Effortless Media Backup with MediaHaven
 
 <div align="center">
-  <img src="./docs/assets/mediasync-main.png" alt="mediasync-img" width="25%">
+  <img src="./docs/assets/mediasync-main.png" alt="MediaSync Application" width="25%">
 </div>
 <br>
 
-**Note**: You need MediaHaven API Server up and running to use this application.
+**MediaSync** is an Android application designed to seamlessly back up your media files to **MediaHaven**. It provides a user-friendly interface for secure and reliable backups.  
+
+> **Note**: The MediaHaven API Server must be up and running to use this application.
+
+<br>
 
 ## Installation 🚀
-Head to [release](https://github.com/omkar-sutar/MediaSync/releases) section to get the desired release. Download and install the APK file of the corresponding release.
-Make sure to provide the permissions requested when the application is started for the first time.
+
+To get started:  
+1. Navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository.  
+2. Download the APK file of your desired release.  
+3. Install the APK on your Android device.  
+4. Grant the requested permissions upon first launch to enable full functionality.  
+
+<br>
 
 ## Configuration ⚙️
-To configure the app, set the values of following parameters by clicking `Edit` button beside the value.
-<ul>
-  <li>Server IP Address</li>
-  <li>Server IP Port</li>
-  <li>Username</li>
-  <li>Password</li>
-</ul>
-<br>To test the configuration, click on Ping button. The client will attempt to connect and log in with the provided credentials.
 
-#### User preferences (optional)
-<ul>
-  <li>Date threshold: The media files created or modified before this date will be skipped for backup. This is useful when old media is already backed up to a different place, or does not need to be backed up.</li>
-  <li>Folders: A comma seperated list of folders to be considered for backup. By default, <code>DCIM/Camera</code> is included. Use <code>%</code> for wildcard path matching.
-  Example value: <code>%DCIM/Camera%, %Pictures/Screenshots%</code></li>
-</ul>
+After installation, configure the app with the following steps:  
+1. Click the `Edit` button next to the parameters in the configuration screen.  
+2. Provide the required values for:  
+   - **Server IP Address**  
+   - **Server Port**  
+   - **Username**  
+   - **Password**  
 
-## Planned for next releases 🗓️
-<ul>
-  <li>Automatic backup</li>
-</ul>
+3. Test your configuration by clicking the `Ping` button. The app will validate the connection and login credentials.  
+
+
+### User Preferences (Optional)
+
+Customize your backup behavior with the following options:  
+- **Date Threshold**: Skip media files created or modified before a specific date. This is useful for excluding older media that has already been backed up elsewhere.  
+- **Folders**: Specify a comma-separated list of folders to include in backups. By default, the app includes `DCIM/Camera`. Use `%` for wildcard path matching.  
+  - **Example**: `%DCIM/Camera%, %Pictures/Screenshots%`  
+
+<br>
+
+## Planned Features 📃️
+
+Future releases will include:  
+- **Automatic Backup**: Automatically back up media files without manual intervention.  
+
+---
+
