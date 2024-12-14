@@ -15,11 +15,8 @@
 
 ## Installation 🚀
 
-To get started:  
-1. Navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository.  
-2. Download the APK file of your desired release.  
-3. Install the APK on your Android device.  
-4. Grant the requested permissions upon the first launch to enable full functionality.  
+To get started, navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository. Download and install the APK of the [latest](https://github.com/omkar-sutar/MediaSync/releases/tag/v1.0.0) release on your Android device.
+Make sure to grant the requested permissions on the first launch of the app.
 
 <br>
 
@@ -44,10 +41,7 @@ Customize your backup behavior with the following options:
 
 <br>
 
-## Planned Features 📃️
+## Planned IAs 📃️
 
-Future releases will include:  
+Action items planned for future releases:  
 - **Automatic Backup**: Automatically back up media files without manual intervention.  
-
----
-
