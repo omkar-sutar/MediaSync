@@ -94,10 +94,6 @@ public class MainActivity extends AppCompatActivity {
         FileAccess files = new FileAccess(preferenceData);
         ArrayList<String> images = files.getRecentImages(this, preferenceData);
         Log.d("ImageArrSize:", Integer.toString(images.size()));
-        images.forEach(img -> {
-            Log.i("IMAGE: ", img);
-        });
-
     }
 
     private void setupManageStorageLauncher() {
