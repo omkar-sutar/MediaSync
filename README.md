@@ -15,7 +15,7 @@
 
 ## Installation 🚀
 
-To get started, navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository. Download and install the APK of the [latest](https://github.com/omkar-sutar/MediaSync/releases/tag/v1.0.0) release on your Android device.
+To get started, navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository. Download and install the APK of the [latest](https://github.com/omkar-sutar/MediaSync/releases/latest) release on your Android device.
 Make sure to grant the requested permissions on the first launch of the app.
 
 <br>
