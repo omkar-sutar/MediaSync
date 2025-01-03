@@ -9,13 +9,13 @@
 
 **MediaSync** is an Android application designed to seamlessly back up your media files to **MediaHaven**. It provides a user-friendly interface for secure and reliable backups.  
 
-> **Note**: The MediaHaven API Server must be up and running to use this application.
+> **Note**: The MediaHaven [API Server](https://github.com/omkar-sutar/MediaHaven-Backend) must be up and running to use this application.
 
 <br>
 
 ## Installation 🚀
 
-To get started, navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository. Download and install the APK of the [latest](https://github.com/omkar-sutar/MediaSync/releases/tag/v1.0.0) release on your Android device.
+To get started, navigate to the [Releases](https://github.com/omkar-sutar/MediaSync/releases) section of this repository. Download and install the APK of the [latest](https://github.com/omkar-sutar/MediaSync/releases/latest) release on your Android device.
 Make sure to grant the requested permissions on the first launch of the app.
 
 <br>
