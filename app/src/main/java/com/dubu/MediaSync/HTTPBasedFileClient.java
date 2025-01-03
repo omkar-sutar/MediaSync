@@ -1,6 +1,10 @@
 package com.dubu.MediaSync;
 
+import static java.nio.file.Files.getLastModifiedTime;
+
 import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.attribute.FileTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashSet;
@@ -11,6 +15,7 @@ import org.apache.hc.client5.http.classic.methods.HttpPost;
 import org.apache.hc.client5.http.config.RequestConfig;
 import org.apache.hc.client5.http.entity.mime.FileBody;
 import org.apache.hc.client5.http.entity.mime.MultipartEntityBuilder;
+import org.apache.hc.client5.http.entity.mime.StringBody;
 import org.apache.hc.client5.http.impl.classic.CloseableHttpClient;
 import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
 import org.apache.hc.core5.http.ContentType;
@@ -60,6 +65,7 @@ public class HTTPBasedFileClient {
         MultipartEntityBuilder builder = MultipartEntityBuilder.create();
 
         builder.addPart("files",new FileBody(file, ContentType.DEFAULT_BINARY));
+        builder.addPart("lastModifiedTime",new StringBody(String.valueOf(file.lastModified()), ContentType.TEXT_PLAIN));
 
         // Build the multipart entity
         HttpEntity multipart = builder.build();
